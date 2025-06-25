@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="FE1B5D46-C" name="LDM" version="1" notes="notes"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="LDM Diagram" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="LDM"/>
+						<Property name="diagramID" value="LDM"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="pdata" value="HideEStereo=1;HideStereo=1;"/>
+						<Property name="styleex" value="HideConnStereotype=1;"/>
+						<Property name="toolbox" value="LDM"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

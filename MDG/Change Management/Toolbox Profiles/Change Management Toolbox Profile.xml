@@ -1,0 +1,20 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="94974FA924" name="Change Management" version="1.0" notes="Change Management"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Change Management" notes="Elements used in Change Management" cx="299" cy="122" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Change Management::Issue(UML::Change)" type="" description="" unit="" values="" default="Issue"/>
+					<Tag name="Change Management::Release(UML::Change)" type="" description="" unit="" values="" default="Release"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

@@ -1,0 +1,31 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="BA8F0EA9-9" name="EAM" version="1" notes="Diagram for Enterprise Architecture Models"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="EAM Diagram" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="alias" value="EAM"/>
+						<Property name="diagramID" value="EAM"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="toolbox" value="EAM"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="OS Diagram" notes="" cx="90" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Custom">
+						<Property name="alias" value="OS"/>
+						<Property name="diagramID" value="OS"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="toolbox" value="OS"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

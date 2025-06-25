@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="C59F6412-E" name="LDM" version="1" notes="1"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="LDM" notes="Elementen voor het modelleren van het Logisch Data Model" cx="221" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LDM::LDM_Class(UML::Class)" type="" description="" unit="" values="" default="Class"/>
+					<Tag name="LDM::LDM_Attribute(UML::Attribute)" type="" description="" unit="" values="" default="Attribute"/>
+					<Tag name="LDM::LDM_Enumeration(UML::Enumeration)" type="" description="" unit="" values="" default="Enumeration"/>
+					<Tag name="LDM::LDM_Association(UML::Association)" type="" description="" unit="" values="" default="Association"/>
+					<Tag name="UML::Generalization" type="" description="" unit="" values="" default="Generalization"/>
+					<Tag name="LDM::LDM_Datatype(UML::DataType)" type="" description="" unit="" values="" default="Datatype"/>
+					<Tag name="LDM::LDM_Message(UML::Class)" type="" description="" unit="" values="" default="Message"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
