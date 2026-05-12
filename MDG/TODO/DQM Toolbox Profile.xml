@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="0998558F-6" name="DQM" version="1.0" notes="Toolbox for dqm"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="DQM" notes="Data Quality Model" cx="256" cy="95">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="DQM::DQM_ValidationRule(UML::Class)" type="" description="" unit="" values="" default="ValidationRule"/>
+					<Tag name="EAUML::Trace(UML::Abstraction)" type="" description="" unit="" values="" default="Trace"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="47E9DF97-D" name="BI-Reporting" version="1.0" notes="BI-Reporting diagram profile"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="BI-Reporting" notes="" cx="164" cy="87" bgcolor="16251646" fontcolor="3947580" bordercolor="5921370" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Custom">
+						<Property name="alias" value="BI-Reporting"/>
+						<Property name="diagramID" value="BI-Reporting"/>
+						<Property name="frameString" value="#DGMTYPE#: #DGMNAME#"/>
+						<Property name="pdata" value="HideEStereo=1;HideStereo=1;"/>
+						<Property name="toolbox" value="BI-Reporting"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

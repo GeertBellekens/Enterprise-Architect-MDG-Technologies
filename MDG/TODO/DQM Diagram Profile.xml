@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="A5DF3A07-7" name="DQM" version="1.0" notes="Diagram for DQL modelling"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="DQM Diagram" notes="" cx="90" cy="70">
+				<AppliesTo>
+					<Apply type="Diagram_Object">
+						<Property name="alias" value="DQM"/>
+						<Property name="diagramID" value="DQM"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="pdata" value="HideEStereo=1;HideStereo=1;"/>
+						<Property name="styleex" value="HideConnStereotype=1;"/>
+						<Property name="toolbox" value="DQM"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

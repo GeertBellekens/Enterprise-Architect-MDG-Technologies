@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="34F808CD-A" name="DQM" version="1.0" notes="UML profile containing data quality validation rules"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="DQM_ValidationRule" metatype="ValidationRule" notes="">
+				<metarelationships>
+					<metarelationship metaclass="Trace" constraint="BPMN2.0::BusinessProcess"/>
+				</metarelationships>
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4AAAAAAAAAAAAA
+wMDAwMDAwMDAwMDAwMDAwMDAsr2sda5UfbBft76zwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAvsC9gLFkQaAHPJ8APJ8ARaENi7Nzv8C/wMDAwMDAwMDAwMDAwMDAwMDAwMDAtb2x
+WqcsPJ8APJ8APJ8APJ8APJ8APJ8AZao9u7+4wMDAwMDAwMDAwMDAwMDAuL61U6UiPJ8APJ8A
+RqQOPJ8APJ8APJ8APJ8APJ8AXqgxvcC8wMDAwMDAwMDAwMDAbaxIPJ8APJ8AmMx56fTjWK0l
+PJ8APJ8APJ8APJ8APJ8AfrBhwMDAwMDAwMDAtL6vPZ8CPaACp9SO////////6fTjWK0lPJ8A
+PJ8APJ8APJ8ARKEMvcC8wMDAwMDAoriVQKEFttuh/////P782+3R////6fTjV6wkPJ8APJ8A
+PJ8APJ8Asb2rwMDAwMDAoriVabU8/P77+fz4e75UQ6IKyuW7////6PTiVqwjPJ8APJ8APJ8A
+sb2rwMDAwMDAoriVPJ8AhMNgbrhDPJ8APJ8ARKMKy+a9////6PPhVasiPJ8APJ8Asb2rwMDA
+wMDAoriVPJ8APJ8APJ8APJ8APJ8APJ8ARKMLzOa+////5/PgVashPJ8Asb2rwMDAwMDAoriV
+PJ8APJ8APJ8APJ8APJ8APJ8APJ8ARKMLzea/////5vPfT6gZsb2rwMDAwMDAoriVPJ8APJ8A
+PJ8APJ8APJ8APJ8APJ8APJ8ARKMLzue/ut2mP6AEsb2rwMDAwMDAoriVPJ8APJ8APJ8APJ8A
+PJ8APJ8APJ8APJ8APJ8ARKMKP6AEPJ8Asb2rwMDAwMDAoriVPJ8APJ8APJ8APJ8APJ8APJ8A
+PJ8APJ8APJ8APJ8APJ8APJ8Asb2rwMDAwMDArLulW6ctQaEIPJ8APJ8APJ8APJ8APJ8APJ8A
+PJ8APJ8ARKEMXqgytr6zwMDAwMDAwMDAwMDAv8C+rLykkrV+ea9ZYKk2Y6k6fK9dlraDr72o
+wMC/wMDAwMDAwMDA</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAF5dNlFsKE8VQAIAAJwHAAAHABEAc3RyLmRhdFVUDQAHN+NpXzfjaV8342lf
+nVXbTttAEJ3nSvyDRV6ChFSgCpQiHspVPIAQSdWHqqpMQi6q4yDHBQHqv/ecmd14TWzToJV3
+Nztnzlx2djKXscRyL3cSyRS7iaSyJh/kRedIEpw9yUz+SI7x5JCH+NblFueZDHCS4deB0xjL
+L+gkYBqBy2MToIZgKHAPlbg+cClwZc4T1e4C+4xdW3ZkC2NTOpg3Fqiv8GUgc/h6i9nH1X7l
+6RFszmDnN8438X3H5zmMpwtcLmewlmAcA02NDEznKjFvYthJanAbgVfGdq1xvZ8rKsXY1Ri7
+pRhT7KfYU3eK0xjauZ4wnxbrsZzKlfQw37ioPS/nImdRTcaKymiqC3/Xmd7tOLj1e5xRRlbu
+Bsj+BHMO1KHepuHeuoFv8JUcVYgi982Z9xxHQaTLPJYZ+tqHTgymkcbX1vrjt+1q0VZv+yNG
+BCw1aT/S7E6wT2DLsk0vhi6CfmDZ2Dqyj3XXcUbKWPBZfPSIt3yNlTmk12b/ElwPQPawtjWz
+fC1eyleXqn1KP2OY/03yXYxqubHv1/Jv47026Zu83v5r708hG1TE7KthWcLcPWr+2VkizBOt
+Z3a8zNV1WC1FVdL6W/W0A0wHHpZXrzV1N2GxUFbuW+VYP7lbr8vVnrOwt5Dz+6tz+H6buwHR
+LzpXd+uqLvz//ZrvmpmO0UWsF/i691reO69Rl9lVXip5bmTVd+o7zUyjCFm9XoFl9+Jd5MCk
+wp7bWkTSCv5FlnE/IO+hd5/LF/jIXn8nF+j9LfkZ6NktFrt/UEsBAhcLFAAAAAgAXl02UWwo
+TxVAAgAAnAcAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUABzfjaV9QSwUGAAAAAAEA
+AQA+AAAAdgIAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+						<Property name="_HideUmlLinks" value="True"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="BIVP" type="enumeration" description="" unit="" values="Beschikbaarheid,Integriteit,Vertrouwelijkheid,Privacy,TBD" default="TBD"/>
+					<Tag name="CorrectiveAction" type="" description="" unit="" values="" default=""/>
+					<Tag name="RuleID" type="" description="" unit="" values="" default="0"/>
+					<Tag name="SanityPriority" type="" description="" unit="" values="" default=""/>
+					<Tag name="SuggestedAction" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

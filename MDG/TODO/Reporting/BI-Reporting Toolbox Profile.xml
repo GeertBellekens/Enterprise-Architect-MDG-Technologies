@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="F8B284A5-D" name="BI-Reporting" version="1.0" notes="BI-Reporting toolbox"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="BI-Reports" notes="" cx="379" cy="110" bgcolor="16251646" fontcolor="3947580" bordercolor="5921370" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="BI-Reporting ::BI-REP(UML::Screen)" type="" description="" unit="" values="" default="BI-Report"/>
+					<Tag name="BI-Reporting ::BI-REP_Grid(UML::Node)" type="" description="" unit="" values="" default="BI-Report Grid"/>
+					<Tag name="BI-Reporting ::BI-REP_Param(UML::GUIElement)" type="" description="" unit="" values="" default="BI-Report Parameter"/>
+					<Tag name="BI-Reporting ::BI-REP_Field(UML::GUIElement)" type="" description="" unit="" values="" default="BI-Report Field"/>
+					<Tag name="BI-Reporting ::BI-REP_Calculation(UML::Action)" type="" description="" unit="" values="" default="BI-Report Calculation"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="BI-Datasets" notes="" cx="379" cy="90" bgcolor="16251646" fontcolor="3947580" bordercolor="5921370" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="BI-Reporting ::BI-Dataset(UML::Class)" type="" description="" unit="" values="" default="BI-Dataset"/>
+					<Tag name="BI-Reporting ::BI-DS_Attribute(UML::Attribute)" type="" description="" unit="" values="" default="BI-Attribute"/>
+					<Tag name="BI-Reporting ::BI-DS_Calculation(UML::Action)" type="" description="" unit="" values="" default="BI-Calculation"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

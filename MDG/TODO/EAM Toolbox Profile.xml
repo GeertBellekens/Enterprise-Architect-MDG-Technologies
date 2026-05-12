@@ -1,0 +1,52 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="CD1D434A-6" name="EAM" version="1.0" notes="Toolbox for Enterprise Architecture Modelling"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Infrastructure" notes="Elements for modelling Enterprise Architecture Model&#xA;" cx="327" cy="124" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="EAM::EAM_ApplicationComponent(UML::Component)" type="" description="" unit="" values="" default="Application Component"/>
+					<Tag name="EAM::EAM_Device(UML::Class)" type="" description="" unit="" values="" default="Device"/>
+					<Tag name="EAM::EAM_Location(UML::Class)" type="" description="" unit="" values="" default="Location"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Security" notes="Elements for modelling Enterprise Architecture Model&#xA;" cx="327" cy="148" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="EAM::EAM_Contact(UML::Class)" type="" description="" unit="" values="" default="Contact"/>
+					<Tag name="EAM::EAM_Function(UML::Class)" type="" description="" unit="" values="" default="Function"/>
+					<Tag name="EAM::EAM_UserGroup(UML::Class)" type="" description="" unit="" values="" default="User Group"/>
+					<Tag name="EAM::EAM_DirectoryService(UML::Class)" type="" description="" unit="" values="" default="Directory Service"/>
+					<Tag name="BPMN2.0::PartnerRole(UML::Class)" type="" description="" unit="" values="" default="Partner Role"/>
+					<Tag name="EAM::EAM_KeyRiskIndicator(UML::Risk)" type="" description="" unit="" values="" default="Key Risk Indicator"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Relations" notes="Elements for modelling Enterprise Architecture Model&#xA;" cx="327" cy="214" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Archimate2::ArchiMate_Composition(UML::Composition)" type="" description="" unit="" values="" default="Composition"/>
+					<Tag name="Archimate2::ArchiMate_Aggregation(UML::Aggregation)" type="" description="" unit="" values="" default="Aggregation"/>
+					<Tag name="Archimate2::ArchiMate_Assignment(UML::Association)" type="" description="" unit="" values="" default="Assigned To"/>
+					<Tag name="Archimate2::ArchiMate_Association(UML::Association)" type="" description="" unit="" values="" default="Association"/>
+					<Tag name="Archimate2::ArchiMate_UsedBy(UML::Dependency)" type="" description="" unit="" values="" default="Used By"/>
+					<Tag name="Archimate2::ArchiMate_Flow(UML::ControlFlow)" type="" description="" unit="" values="" default="Reports to"/>
+					<Tag name="EAM::EAM_Access(UML::Dependency)" type="" description="" unit="" values="" default="Access"/>
+					<Tag name="Archimate2::ArchiMate_Triggering(UML::ControlFlow)" type="" description="" unit="" values="" default="Escalates to"/>
+					<Tag name="EAM::EAM_UserGroupMember(UML::Association)" type="" description="" unit="" values="" default="User Group Membership"/>
+					<Tag name="EAM::EAM_AccessRestriction(UML::Dependency)" type="" description="" unit="" values="" default="Access Restriction"/>
+					<Tag name="EAM::EAM_IncompatibleRole(UML::Dependency)" type="" description="" unit="" values="" default="Incompatible Role"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

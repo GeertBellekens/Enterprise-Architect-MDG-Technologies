@@ -1,0 +1,24 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="DCAC2032-2" name="OS" version="1.0" notes="Elements for modelling Organizational Structure Models"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="OS" notes="Elements for modelling Organization Structure Models" cx="327" cy="161" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Archimate2::ArchiMate_BusinessCollaboration(UML::Class)" type="" description="" unit="" values="" default="Org Unit"/>
+					<Tag name="EAM::EAM_Function(UML::Class)" type="" description="" unit="" values="" default="Function"/>
+					<Tag name="Archimate2::ArchiMate_Location(UML::Class)" type="" description="" unit="" values="" default="Legal Entity"/>
+					<Tag name="Archimate2::ArchiMate_Flow(UML::ControlFlow)" type="" description="" unit="" values="" default="Reports to"/>
+					<Tag name="Archimate2::ArchiMate_Triggering(UML::ControlFlow)" type="" description="" unit="" values="" default="Escalates to"/>
+					<Tag name="Archimate2::ArchiMate_Aggregation(UML::Aggregation)" type="" description="" unit="" values="" default="Is part of"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

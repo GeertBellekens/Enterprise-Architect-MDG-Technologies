@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="6264AF23-7" name="BPM" version="1" notes="notes"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="BusinessProcess" notes="" generalizes="BPMN2.0::BusinessProcess" baseStereotypes="BPMN2.0::BusinessProcess" redefines="BPMN2.0::BusinessProcess">
+				<TaggedValues>
+					<Tag name="Availability" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Integrity" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Confidentiality" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Privacy" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="2947C2A8-5" name="KPI" version="1.0" notes="KPI"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="KPI &amp; Reporting Diagram" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="KPI"/>
+						<Property name="diagramID" value="KPI"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="pdata" value="HideEStereo=1;HideStereo=1;"/>
+						<Property name="styleex" value="HideConnStereotype=1;"/>
+						<Property name="toolbox" value="KPI"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

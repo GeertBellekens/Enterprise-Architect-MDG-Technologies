@@ -1,0 +1,21 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="DAF9F992E5" name="Change Management" version="1.0" notes="Change Management"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Change Management diagram" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Custom">
+						<Property name="alias" value="Change Management"/>
+						<Property name="diagramID" value="CMD"/>
+						<Property name="frameString" value="#DGMTYPE# #DGMNAME#"/>
+						<Property name="toolbox" value="Change Management"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

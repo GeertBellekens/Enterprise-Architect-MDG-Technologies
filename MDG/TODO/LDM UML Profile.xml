@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="708B5E2A-C" name="LDM" version="1" notes="notes"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="LDM_Attribute" metatype="LDM_Attribute" notes="" cx="194" cy="231" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Attribute"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Availability" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Integrity" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Confidentiality" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Privacy" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Accuracy" type="enumeration" description="" unit="" values="1,2,3,TBD" default="TBD"/>
+					<Tag name="Critical" type="enumeration" description="" unit="" values="Yes,No,TBD" default="TBD"/>
+					<Tag name="DataKind" type="enumeration" description="" unit="" values="Raw,Transformed,TBD" default="TBD"/>
+					<Tag name="Intern_Extern" type="enumeration" description="" unit="" values="Intern,Extern,TBD" default="TBD"/>
+					<Tag name="Quality Periodicity" type="enumeration" description="" unit="" values="Daily,Weekly,Monthly,Quarterly,Yearly,TBD,NA" default="TBD"/>
+					<Tag name="Risk Appetite" type="enumeration" description="" unit="" values="0,1,2,3,TBD" default="TBD"/>
+					<Tag name="Risk Classification" type="enumeration" description="" unit="" values="0,1,2,3,TBD" default="TBD"/>
+					<Tag name="Suitability" type="enumeration" description="" unit="" values="1,2,3,TBD" default="TBD"/>
+					<Tag name="Timesliced" type="enumeration" description="" unit="" values="Yes,No,TBD" default="TBD"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LDM_Class" metatype="LDM_Class" notes="" cx="90" cy="60" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Owner" type="enumeration" description="" unit="" values="MGA,Insurer,TBD" default="TBD"/>
+					<Tag name="Validatable" type="enumeration" description="" unit="" values="Yes,No,TBD" default="No"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LDM_Message" metatype="LDM_Message" notes="" cx="90" cy="60" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="LDM_Datatype" metatype="LDM_Datatype" notes="" cx="90" cy="60" bgcolor="13040123" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="DataType"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="minLength" type="" description="" unit="" values="" default=""/>
+					<Tag name="maxLength" type="" description="" unit="" values="" default=""/>
+					<Tag name="pattern" type="" description="" unit="" values="" default=""/>
+					<Tag name="totalDigits" type="" description="" unit="" values="" default=""/>
+					<Tag name="fractionDigits" type="" description="" unit="" values="" default=""/>
+					<Tag name="minInclusive" type="" description="" unit="" values="" default=""/>
+					<Tag name="maxInclusive" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LDM_Association" metatype="LDM_Association" notes="" cx="148" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<metaconstraints>
+					<metaconstraint umlRole="client" constraint="LDM::LDM_Class"/>
+					<metaconstraint umlRole="supplier" constraint="LDM::LDM_Class"/>
+				</metaconstraints>
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="_lineStyle" value="orthogonalS"/>
+						<Property name="_MeaningBackwards" value="Associated From"/>
+						<Property name="_MeaningForwards" value="Associated To"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Timesliced" type="enumeration" description="" unit="" values="Yes,No,TBD" default="TBD"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LDM_Enumeration" metatype="Enumeration" notes="" cx="131" cy="70" bgcolor="14941672" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Enumeration"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Validatable" type="enumeration" description="" unit="" values="Yes,No,TBD" default="No"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

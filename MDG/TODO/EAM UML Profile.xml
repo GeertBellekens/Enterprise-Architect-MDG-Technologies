@@ -1,0 +1,379 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="C259CE5D-9" name="EAM" version="1.0" notes="Elements for Enterprise Architecture Model"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="EAM_Access" metatype="access" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Archimate2::ArchiMate_Access" baseStereotypes="Archimate2::ArchiMate_Access">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAxeblVsC0SSGAEAAHwCAAAHABEAc3RyLmRhdFVUDQAHBity
+YwYrcmMGK3JjjZJBS8NAEIXftYL/IfTUwgq2Vot4UosoCBYqeI4mtYUklW4U
+i/jf/XaSYCIisuxkZue9mTeb9Vop1otSRcrx1iq0rz19mO1pQabUHFvogWxC
+tNJAIw11VmO8YTLjpkSldkQpqL5mutM93wYd1SvXRm/G24A7lGP/xDQVK8wI
+RBfXI78EN9A1yj19Yj1b1xuiSOeoza1G8J9YQZ0n7zjpg9/qlbOgblhXbOb+
+e6oFU93SZdaa7JuzhPOOl1A/RdEa/QW8iek/sEmcTswGv12hfd+X8DL2Fu5U
+R6CnGmPHcCa/sK7olLH+z5sbcofGSuFxfcMOnCNyOu3o+7RvZcP2ndcTXkdi
+d3RBvdL+W849xXrkLGu9q6rCF1BLAQIXCxQAAAAIAAxeblVsC0SSGAEAAHwC
+AAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAcGK3JjUEsFBgAAAAAB
+AAEAPgAAAE4BAAAAAA==
+</Image>
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="_lineStyle" value="orthogonalS"/>
+						<Property name="_MeaningBackwards" value="Can be Accessed By"/>
+						<Property name="_MeaningForwards" value="Has Access To"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Is Admin Access" type="enumeration" description="" unit="" values="True,False" default="False"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_AccessRestriction" metatype="restrict" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Archimate2::ArchiMate_Access" baseStereotypes="Archimate2::ArchiMate_Access">
+				<metaconstraints>
+					<metaconstraint umlRole="client" constraint="EAM::EAM_UserGroup"/>
+					<metaconstraint umlRole="supplier" constraint="EAM::EAM_ApplicationComponent;EAM::EAM_Device;EAM::EAM_Location"/>
+				</metaconstraints>
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAADEDgAAxA4A
+ABAAAAAAAAAAwMDA/4A+Pv/AoKD/wICA/8BeXv8AAAAAAAAAAAARAAAAAAAA
+ABEAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAEQAAAAAAAAAAAABEAAAAAAAAA
+EQAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAACMB
+AAAAAAAAIgEAAAAAAAAAAQAAAAAAABERERAAAAAAAAEAAAAAAAAAAQAAAAAA
+AAABAAAAAAAAAAAAAAAAAAAAAAAA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAIhmRlG6pu2RwwAAAO4BAAAHABEAc3RyLmRhdFVUDQAHpGh8
+X6RofF+kaHxfhZDBCsIwEETnWsF/CJ4UFPUigngQPHj3C6IGFWwrTVRE+u9O
+trU2rSBhw2zyZtldixM0rjBQiKnOSNBFBy+5VXnGPAoHZCQeVFoyDUu3oVK4
+iNMErgSpEJpESt8SjhVupBYBZ/niqgqW+snMoI8e1lhhiw3VoOGKWfMuzpTk
+BENGk/nULJgpiZDL5fZR9FnswVFlOIrvu4tItrDnj5/Klm8+87yPnXStOKev
+8WvSds8jzKtuola/MxL1/7b/n7teP8cbUEsBAhcLFAAAAAgAiGZGUbqm7ZHD
+AAAA7gEAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB6RofF9QSwUG
+AAAAAAEAAQA+AAAA+QAAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="_lineStyle" value="orthogonalS"/>
+						<Property name="_MeaningBackwards" value="Access Restricted for"/>
+						<Property name="_MeaningForwards" value="Restrict Access to"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EAM_ApplicationComponent" metatype="Application Component" notes="" bgcolor="16777163" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_ApplicationComponent" baseStereotypes="Archimate2::ArchiMate_ApplicationComponent EAM_CMDB_Element EAM_Element">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Aggregation" constraint="EAM::EAM_ApplicationComponent"/>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Composition" constraint="EAM::EAM_ApplicationComponent"/>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_UsedBy" constraint="EAM::EAM_ApplicationComponent"/>
+				</stereotypedrelationships>
+				<AppliesTo>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Software Type" type="enumeration" description="" unit="" values="Off the shelf,SAAS,Inhouse developed" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_BIVP" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true">
+				<TaggedValues>
+					<Tag name="Availability" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Integrity" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Confidentiality" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+					<Tag name="Privacy" type="enumeration" description="" unit="" values="1,2,3,4,5,TBD" default="TBD"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_CMDB_Device" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true" generalizes="EAM_CMDB_Element" baseStereotypes="EAM_CMDB_Element">
+				<TaggedValues>
+					<Tag name="IP Address" type="" description="" unit="" values="" default=""/>
+					<Tag name="Guarantee" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_CMDB_Element" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true">
+				<TaggedValues>
+					<Tag name="Cost" type="structured" description="" unit="" values="" default="">
+						<Property name="Cost per unit" type="Float" description="" unit="" values="" default=""/>
+						<Property name="Unit" type="String" description="" unit="" values="" default=""/>
+					</Tag>
+					<Tag name="Version" type="" description="" unit="" values="" default=""/>
+					<Tag name="License" type="" description="" unit="" values="" default=""/>
+					<Tag name="ContractEndDate" type="" description="" unit="" values="" default=""/>
+					<Tag name="Notice Period" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_Contact" metatype="Contact" notes="" bgcolor="9830398" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_BusinessActor" baseStereotypes="Archimate2::ArchiMate_BusinessActor">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Aggregation" constraint="EAM::EAM_DirectoryService"/>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Assignment" constraint="EAM::EAM_Function"/>
+				</stereotypedrelationships>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEhIKlTlS8/79QMAAM4ZAAAHABEAc3RyLmRhdFVUDQAHHPbb
+YRz222Ec9tthnVhNTxsxEJ0rlfofUE4ggdoECkEVh4r20AuqClWPVdoNHxIE
+RAgVQvz3vrHjeD2esZ1qtd/P8/Fm7H3ajqb0h+7ogSb0SNe4mtEmdbia48lv
+usH7jt7SG3pxxw2HvcbTGfBxzDEN6Az7xyXqmi5oi66AmDvcJe4G9BV3n4Xt
+Ae1gP4fVBe4HtI3N2wgeN2B5CivfnNcT+LtxUWzRiD5g26H3bt+G93fYHlYx
+y7E/4bvD3RXG7jl8QPG4zrHwF/l7C5tg5gGe5tgC7gYWZs7iHWwM4ZV9+3Pf
+3i3eP61wOka3lWL8+dWdX7HzuVNrNqdnx/UUvn/gaor3bXU7BS8tlTvrefiE
+CDiGhbPXUsMJ4u4wfoHKz539e2DZtn82dFaGrqbxHI7jhJWarZFqa5cO3HGI
+2mssb/RsMZ8+qvAuZsKVm4ALzv4R2/NyxDH2gevqCzxlti9hj9mJnqIv2SOH
+dITouJ/7kVld0orbr+C814DqRzdBBn/cHGM7/jjuHQ9x9iP5mo97QKW+yvnq
+Y9L4xi6+oah/jho51LCIOnARcy+kqFqmcRzzzj3EmNSGlaWFTyPzq1gbqozx
+9WjB5N76WfB6uEBf7676uZ2vaJ/ru7fkLvWVsmShZE/7XihXmd8z6qiI8tVk
+v5KDdeZAtBLe5vMtzdRCpdG1YmqrgPeWo9Is/bfvDl++2X/VO3oJjBxgdpdZ
+0FFaJXlul1HcFbxOlFC+RrzmlJioZRqthC7n56VMLZQ2I3OFIHGe41Zc7tWq
+efxWtXMRffhKauymXFioNHa/ltfq6b8Ltd7wlcr7rD3LaIGv+1/oaKVvzdIl
+t8TKs3Ozi7XJJqx4Fr1fv4Lsm3H2lUnfVkS89K4l85a2kHzZ6sJC5quURNoK
+o4X9dTVGnrk1SuunXGfkOF1pSJylNeo5r6c2ZL7WCBmfpTh0XA2lqw4dpfmM
+1yXdUeeuRXlIxmyc7HhdfeQ4XX9IXJsCqefcokFkzjYujbEdVV8xvE8NJ+tf
+0iItfAQ/gZt8/c/5sHBabfOvTo7TNYnEtamSes4tukTmbOO0WatpDom01YmO
+zH1bfaDpkzorLQpFsmLj0gwslZLjdJ0icZZSWa8PWtRK+JsUr8Jd/vdjtHr3
+kljQ/n/wnyTO5X5VN+u/xxP9wnjO/5L8H6gT+kKndI7jdzHqag1s30ebCtBq
+lWsAidIVQIqyvv/1CtYVT83GegrC4swaqc3kNlQZo2sIDSO9RXRJPdRYa9EO
+bcohjdnSDRKlq4YU1aYZapm2KAb5fdRRaXStmFwDyCx1VJplTSnUWQheAiP5
+6itZ0FFaJfMVX6J0hSCZYI/jZb1j9mEFf12O8m9e6R9QSwECFwsUAAAACABI
+SCpU5UvP+/UDAADOGQAABwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAH
+HPbbYVBLBQYAAAAAAQABAD4AAAArBAAAAAA=
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Company" type="" description="" unit="" values="" default=""/>
+					<Tag name="UserID" type="" description="" unit="" values="" default=""/>
+					<Tag name="URL" type="" description="" unit="" values="" default=""/>
+					<Tag name="Email" type="" description="" unit="" values="" default=""/>
+					<Tag name="Address" type="" description="" unit="" values="" default=""/>
+					<Tag name="Phone" type="" description="" unit="" values="" default=""/>
+					<Tag name="IsDisabled" type="enumeration" description="" unit="" values="True,False" default="False"/>
+					<Tag name="IsSystemAccount" type="enumeration" description="" unit="" values="True,False" default="False"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_Device" metatype="Device" notes="" bgcolor="13434828" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_Device" baseStereotypes="Archimate2::ArchiMate_Device EAM_CMDB_Device EAM_Element">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Association" constraint="EAM::EAM_ApplicationComponent"/>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Composition" constraint="EAM::EAM_Device;EAM::EAM_Location"/>
+				</stereotypedrelationships>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EAM_DirectoryService" metatype="Directory Service" notes="" bgcolor="9830398" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_BusinessCollaboration" baseStereotypes="Archimate2::ArchiMate_BusinessCollaboration">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EAM_Element" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true" generalizes="EAM_BIVP" baseStereotypes="EAM_BIVP">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Aggregation" constraint="EAM::EAM_DirectoryService"/>
+				</stereotypedrelationships>
+				<TaggedValues>
+					<Tag name="Access Security" type="" description="" unit="" values="" default=""/>
+					<Tag name="Functional Owner"/>
+					<Tag name="Managed By"/>
+					<Tag name="Supplier"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_Function" metatype="Function" notes="" bgcolor="9830398" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_BusinessRole" baseStereotypes="Archimate2::ArchiMate_BusinessRole">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAD53LVM6E0nmxgMAAIAWAAAHABEAc3RyLmRhdFVUDQAH62Y/
+YetmP2HrZj9h7VdNT9tAEJ1rKvU/VHChElVJwkdQxamip6oXDj1WgBPiNglR
+Yoqg6n/vezve2LvZ9ToBpB6QFXvXfjvzdj43SxnLpcxlKO9kilEuM3krb+SP
+uXdkgncPcit3UuB6MMgz2ZErvFtIhtkCs08leoa3SyMxw+geyALf74CyiFxG
+smcQS3y7lBvMduQrEL/xm2C8j18P4w+Y5fITMpd48x6XSrDMOvIRFzE3kFeA
+/xVm1GW/X2BcyBcgJrg+g9HEsN6TrgzkCJq6cioHePZw9aHBsvy7Edv+Vmzn
+4LrAfdKKcQ88TwzjAfSR8SHGzYznWHlrPLYwviP3BWbXZi8zMKFu+ozzAmtv
+MdM9HUR2QY+PIDuXR4z2SvsdwpoVl05pLWqdG8ljIOvfp9BECxZ4WhkHDoKW
+mq0QXeMtF0H53Am/6/p9WIb3Lu761FV2pO/jWpTHOoo2yiI7GZW+oj0zs2/a
+/BfWhPGMGmqdA0v7DVbcK9a+fmYTZd8hwjW76FN6M4cF6LMfRhtR3M9N6UP6
+8jnkDFvLmWE8NXiuuzaWK0RrRF1CFSdV9YlxsNgqBjsmshmHlMxRBjnDVW6d
+GRtW2kL4e6Az458zk1sV2maSfdJj9JXOUplw4vluPd+qaN3G41aeb6VNPf4U
+T8U4bOOpsO3Dei3nkJ4x2FyW9XVmOpS7Jz8ayLgwlthdyd319u5GAn/ViN5n
+vC6kqpy0DCu2MrTsiMlLLhWWDFl5KmYvW7lT0dyu0zX1Zdcffrfze3NTr0t1
+53qctOPd1KGbeYe6dBP3VJ+ucw91wZ7XSUN90Mf4nZDfbS88KS1p19kx38f1
+2Fq2WVcP9zarVWudL/P5eqvaNZWhfDPFep5Tc2F1INZGgN7jGXsh5xtkbI73
+6/o0Iu25OJSrbaP6NRtT3DfJRj96udfD2v1Y/FOhi+d3i7XR7q9xM14z9MjD
+uJnI84SPaRfptJFanRhr1Xhsf5PvkdiOe7Lb4MnKj/TiNTCsUnXPnXsWZJTx
+d7q61+1CKeOSPzmT1QT7pJ3mZr9qtyZb856ytY+p6310NPM/MP8VM8Pb6fdP
+hyH9Pob6KYd1hWdk1W1X8txMb7Ma6n94nmszx84uE8bS+i5dJopxmYT+YcYj
+o6k2uZHRVJfimR2vSlz3P0Uea1DK3topfczzRJ7q96MqpN/HpCKPFh3hW1hv
+39jS35OrVzGb6qU9NGLCmo9baFbMUyK8qYvFIzzUweJRnu5frxH+khEerq22
+p64z2ba2ppmkci2tN9yBUnpTuRbuma7mUF+zZ5h/UEsBAhcLFAAAAAgAPnct
+UzoTSebGAwAAgBYAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB+tm
+P2FQSwUGAAAAAAEAAQA+AAAA/AMAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Level" type="enumeration" description="" unit="" values="1e-lijns,2e-lijns,3e-lijns,Leeg" default="1e-lijns"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_IncompatibleRole" metatype="IncompatibleRole" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<metaconstraints>
+					<metaconstraint umlRole="client" constraint="BPMN2.0::PartnerRole;EAM::EAM_UserGroup"/>
+					<metaconstraint umlRole="supplier" constraint="BPMN2.0::PartnerRole;EAM::EAM_UserGroup"/>
+				</metaconstraints>
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02BQAAAAAAADYEAAAoAAAAEAAAABAAAAABAAgAAAAAAAABAADEDgAAxA4A
+AAABAAAAAAAAwMDA/6SgoP/AoKD/8Pv//3191f8sLPT/MzP9/ysr9P99U2v/
+wNzA/3x81f8QEP7/3Nz////////x8f//UlL+/3xTbP/a2v//U1P+/+jo///y
+8v//NDT+/+fn/v9UVP7/5+f//+np//9VVf//2Nj+/3w9lv9SUf7/gD4+/309
+lf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh4AAAAAAAAA
+AAAAAAAAAB4eHgAAAAAAAAAAAAAAAAAAHh4eAAAAAAAAAAAAAAAAAAAeHh8H
+BgUEAAAAAAAAAAAAABwdFA0MCwoAAAAAAAAAAAAHFA0ZGhsHAAAAAAAAAAAA
+FQ0WFxgNFQAAAAAAAAAAAAcREhMNFAcAAAAAAAAAAAAKCwwNDg8QAAAAAAAA
+AAAAAAQFBgcICQIAAAAAAAAAAAAAAAAAAAIDAQAAAAAAAAAAAAAAAAAAAQEA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeHgAAAAAAAAAAAAAA
+AAAAHh4eAAAAAAAAAAAAAAAAAAAeHh4AAAAAAAAAAAAAAAAAAB4eHwcGBQQA
+AAAAAAAAAAAAHB0UDQwLCgAAAAAAAAAAAAcUDRkaGwcAAAAAAAAAAAAVDRYX
+GA0VAAAAAAAAAAAABxESEw0UBwAAAAAAAAAAAAoLDA0ODxAAAAAAAAAAAAAA
+BAUGBwgJAgAAAAAAAAAAAAAAAAAAAgMBAAAAAAAAAAAAAAAAAAABAQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAM5gVlHkNOKIxQAAAOYBAAAHABEAc3RyLmRhdFVUDQAH33WR
+X991kV/fdZFfjVHLCsIwEJyrgv/QY4UWrFYRvCnePAgePCuttpA+aIoI0n93
+slpsfICEHTbZmd1JopHggBIxHGTMUuQYoI+bYA87VmpsiTn2rEbcJXARYIiF
+cJznylDgIuyC9RE8xjtHSf+WE5DxnaeFcyL7yixCRTxzV1DtIhSVL3oPM0GT
+t11s1yuqFKOicowpl5nYnfr7lpMPZ2v2MrcoxeM/Xux3CWW+j3mHYb/Kw+Gr
+3gia0NZfGZcRtTGW1NWizrAh48gz1fnFBndQSwECFwsUAAAACADOYFZR5DTi
+iMUAAADmAQAABwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAH33WRX1BL
+BQYAAAAAAQABAD4AAAD7AAAAAAA=
+</Image>
+				<AppliesTo>
+					<Apply type="Dependency">
+						<Property name="_lineStyle" value="orthogonalS"/>
+						<Property name="_MeaningBackwards" value="Incompatible with"/>
+						<Property name="_MeaningForwards" value="Incompatible with"/>
+						<Property name="direction" value="Unspecified"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EAM_KeyRiskIndicator" metatype="Key Risk Indicator" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Risk"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Frequency" type="" description="" unit="" values="" default=""/>
+					<Tag name="OrangeCondition" type="" description="" unit="" values="" default=""/>
+					<Tag name="RedCondition" type="" description="" unit="" values="" default=""/>
+					<Tag name="TargetValue" type="" description="" unit="" values="" default=""/>
+					<Tag name="Responsible"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_Location" metatype="Location" notes="" bgcolor="13434828" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_Node" baseStereotypes="Archimate2::ArchiMate_Node EAM_Element">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Composition" constraint="EAM::EAM_Location"/>
+				</stereotypedrelationships>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EAM_UserGroup" metatype="User Group" notes="" bgcolor="9830398" fontcolor="-1" bordercolor="-1" borderwidth="1" hideicon="0" generalizes="Archimate2::ArchiMate_BusinessActor" baseStereotypes="Archimate2::ArchiMate_BusinessActor">
+				<stereotypedrelationships>
+					<stereotypedrelationship stereotype="Archimate2::ArchiMate_Aggregation" constraint="EAM::EAM_DirectoryService;EAM::EAM_UserGroup"/>
+					<stereotypedrelationship stereotype="EAM::EAM_Access" constraint="EAM::EAM_ApplicationComponent;EAM::EAM_Device;EAM::EAM_Location"/>
+				</stereotypedrelationships>
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA
+wMDAwMDAwMDAwMDAwMDATU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1NTU1Ne3t7
+wMDAwMDAwMDAwMDAwMDAwMDAHykpmcvLmcvLmcvLmcvLmcvLmcvLmcvLeqOj
+TU1NwMDAwMDAwMDAwMDAwMDAwMDAJjMzv/7+v/7+v/7+v/7+v/7+v/7+v/7+
+mcvLDxQUJjMzJjMzJjMzJjMzJjMzDhISJjMzv/7+v/7+v/7+v/7+v/7+v/7+
+v/7+lsjITGZmv/7+v/7+v/7+v/7+v/7+RVtbHSYmvPr6v/7+v/7+v/7+v/7+
+v/7+v/7+cpeXVXFxv/7+v/7+v/7+v/7+v/7+RVtbZ2dnRFpavfv7v/7+v/7+
+v/7+v/7+sOrqGiIiqODgv/7+v/7+v/7+v/7+v/7+RVtbwMDAU1NTTmhoPFBQ
+JjMzHyoqXn19MkNDjbu7v/7+v/7+v/7+v/7+v/7+r+npKC8vwMDAtra2FBcX
+ire3v/7+uff3WXd3AAAAUGpqvvz8i7m5c5iYmMrKvvz8OEpKiIiIwMDAhISE
+VXFxv/7+v/7+v/7+uff3HSMjREREHykpTmhoc5iYNEVFJzMzXFxcwMDAwMDA
+eHh4aYuLv/7+v/7+v/7+v/7+JjExVVVVbJCQv/7+v/7+v/7+QlhYiIiIwMDA
+wMDAp6enKTQ0uvf3v/7+v/7+kL+/PD09KSsruPT0v/7+v/7+v/7+jLu7VFRU
+wMDAwMDAwMDAeHh4KTQ0aYuLVXFxKy8vpaWlMjMzp97ev/7+v/7+v/7+eaGh
+ZmZmwMDAwMDAwMDAwMDAp6eneHh4hISEt7e3wMDAh4eHN0lJs+/vv/7+o9nZ
+ISkprq6uwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAfX19ISQkISws
+LS4um5ubwMDAwMDA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAIyC2lZz7I1xHQMAAK4NAAAHABEAc3RyLmRhdFVUDQAHxrqZ
+ZMa6mWTGuplkvVZNT9tAEJ1rKvU/WHAxElILpAVU9dKqpb1FQM8ViYMTkYTI
+cUAp6n/vezPZ2F5/otLK8nq9+/bN587uSiZyI0sZSyBz9KaykNfySp607ckM
+Yxu5l7WkeDaK/Ch7MsRYIhH+Evx92KIXGF0pY4TeI5Ap5tdAOYS1U7mVUHEr
+MCbAkjdRCSH4EvyN8HcDxhg6jJWZ/ynW3uNvTw7xvsV7gMdYnc491esW3FP5
+hV4oJ/IO+FPgD3aa9DBPRkpdKvMEyPz8GJJn4FgCSZZjrD/U90zbE4+PWkY1
+XLfgIRstilQyrb7Dmmr8HLMPmE3xDaF9lTzqtvAwvo1FzJFi2BZRVdKamc47
+MZk88rUxFTG/t19GgL5vi69x+BqXsyhUXKZ5lQXMXUZojRy3XGZuMisZKc5R
++3ibgczEbqsX6M/Rt3UjYbakYvsnz+C+2erAk+wQmT96uovoE/KxF2H1GPgY
+3xT7kLmbyXD+rZbmNK2SM5GfmGUEY+BYCYqWZDJMJ2qcqv37O959z2KnjX2t
+5ZvXiTtnKMwHzjiNmBvMIsqJVRYlrVB56GWLtZNkK/515elms28p83mkdmRy
+AvSpCUfzNpu15vMMzUhwT2UR+B/2tu3TN3iG26p3B4vsHAnUQ8xPWsLMiTBW
+5QPHc6Vx/ipWQz9jbqbIUC505odKTyoR1DrLNWMaqJ1/w3NZ8luX2tJN+icd
+tbO1XgP6NlJvPcJ7PEG4T3jOJMLzhVWDDKuCJ5975mUnhtVov1I3n3rPPeeO
+9Jzu46TLY4rnBXV47+lQRpw1cnB9N0yzpH6lvtWRoT+Z3/TWy8TG4sH3HBqU
+9XjJyJg3Ths95vK+G8rPoyKKseGNJ8/UrWpyZA6beBO16kLs05ajvnpeyZdc
+9Wyrm1OMlyVZrXR33qqKWY4ifdHPtX7G+XiLhGGdL/01xdjx3tjmb96dfEw3
+f3+HXgP16oOwao5RD1nRL9Rra+jdzf8LPbXz/g+g1zeNwDXaWP3eLo0xCNBe
+N0ahrhIzd5nBx2h5Z+oXfFZ/DjWvGyhyA11prdu51vZ3Pd5i673P9w9QSwEC
+FwsUAAAACACMgtpWc+yNcR0DAACuDQAABwAJAAAAAAAAAAAAAIAAAAAAc3Ry
+LmRhdFVUBQAHxrqZZFBLBQYAAAAAAQABAD4AAABTAwAAAAA=
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="IsPrivilegedGroup" type="enumeration" description="" unit="" values="True,False" default="False"/>
+					<Tag name="AllowNestedGroups" type="enumeration" description="" unit="" values="True,False" default="True"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="EAM_UserGroupMember" metatype="UserGroupMember" notes="" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Archimate2::ArchiMate_Assignment" baseStereotypes="Archimate2::ArchiMate_Assignment">
+				<metaconstraints>
+					<metaconstraint umlRole="client" constraint="EAM::EAM_UserGroup"/>
+					<metaconstraint umlRole="supplier" constraint="BPMN2.0::PartnerRole;EAM::EAM_Contact"/>
+				</metaconstraints>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAHZpTVGOHenfjgAAAJwBAAAHABEAc3RyLmRhdFVUDQAHn6eF
+X5+nhV+fp4VfzY7NCsIwEIS/q4LvUDxV0Js3n8a2UQPRlrQ9Sd/dyRppHkGG
+XfZndmdGHlwZcFSM9MxEWnU7trwtbzR3TNzwBKEVKygiNXfbzMaINDbtrC5Z
+B+GSfzn74aWYbmpOnDnm/I0fd7GcYiw8Tqpi1v0nj0G+GruseOq2E4L6pDcJ
+vaYrp3Q+SN/zEqdmL6y/P1BLAQIXCxQAAAAIAHZpTVGOHenfjgAAAJwBAAAH
+AAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAefp4VfUEsFBgAAAAABAAEA
+PgAAAMQAAAAAAA==
+</Image>
+				<AppliesTo>
+					<Apply type="Association">
+						<Property name="_lineStyle" value="orthogonalS"/>
+						<Property name="_MeaningBackwards" value="Is Part of"/>
+						<Property name="_MeaningForwards" value="Contains"/>
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes>
+			<TaggedValueType property="Functional Owner" description="" notes="Type=RefGUID;Stereotypes=EAM_Contact;"/>
+			<TaggedValueType property="Managed By" description="" notes="Type=RefGUID;Stereotypes=EAM_Contact;"/>
+			<TaggedValueType property="Supplier" description="" notes="Type=RefGUID;Stereotypes=EAM_Contact;"/>
+			<TaggedValueType property="Responsible" description="" notes="Type=RefGUID;Stereotypes=EAM_Contact;"/>
+		</TaggedValueTypes>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

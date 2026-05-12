@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="942E4031-D" name="KPI" version="1.0" notes="KPI"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="KPI Elements" notes="Elements for modelling KPI Measurements and Dimensions&#xA;" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="KPI::KPI_Measure(UML::Class)" type="" description="" unit="" values="" default="Measure"/>
+					<Tag name="KPI::KPI_Dimension(UML::Class)" type="" description="" unit="" values="" default="Dimension"/>
+					<Tag name="KPI::KPI_Alert(UML::Class)" type="" description="" unit="" values="" default="Alert"/>
+					<Tag name="KPI::KPI_Table(UML::Class)" type="" description="" unit="" values="" default="Table"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Reporting Elements" notes="Elements for modelling Reports&#xA;" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="KPI::KPI_Report(UML::Screen)" type="" description="" unit="" values="" default="Report"/>
+					<Tag name="KPI::KPI_Panel(UML::Part)" type="" description="" unit="" values="" default="Panel"/>
+					<Tag name="KPI::KPI_ReportField(UML::Object)" type="" description="" unit="" values="" default="ReportField"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="KPI Relations" notes="Elements for modelling KPI Measurements and Dimensions&#xA;" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="KPI::KPI_Dependency(UML::Dependency)" type="" description="" unit="" values="" default="Dependency"/>
+					<Tag name="KPI::KPI_Filtering(UML::Dependency)" type="" description="" unit="" values="" default="Filtering"/>
+					<Tag name="KPI::KPI_Monitoring(UML::Dependency)" type="" description="" unit="" values="" default="Monitoring"/>
+					<Tag name="KPI::KPI_Alerting(UML::Dependency)" type="" description="" unit="" values="" default="Alerting"/>
+					<Tag name="UML::TraceLink" type="" description="" unit="" values="" default="Trace"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
