@@ -7,5 +7,6 @@
 	<ModelSearches2>
 		<ModelSearch guid="{B5336E67-03F5-4260-9631-F204FABAD190}" name="Objects by Scope (in selected package)"/>
 		<ModelSearch guid="{50F4B669-AF73-46ac-9438-9AA79B5BB05B}" name="Objects by Change object (in selected package)"/>
+		<ModelSearch guid="{07855F1B-5644-46ae-B5C9-0B272F1117EA}" name="Objects by Recent Change (in selected package)"/>
 	</ModelSearches2>
 </MDG.Selections>
